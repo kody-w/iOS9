@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stop_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spY-Jn-ZmK">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Stopwatch" id="Vz7-Jv-2b4">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="sNJ-t4-Bei">
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="o0m-US-Ngb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJa-TE-foH">
+                                <rect key="frame" x="209" y="251" width="182" height="97"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="7vX-Ag-XWh"/>
+                                    <constraint firstAttribute="height" constant="97" id="fzg-vh-zew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpp-xL-vEn">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oov-g8-GIb"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="kKN-K0-S6a">
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" id="Rjd-ZL-uLt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uNB-fW-bqx"/>
+                                    <barButtonItem systemItem="pause" id="UCb-Of-k0L">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="1Py-4f-A4t"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xpp-xL-vEn" secondAttribute="trailing" constant="-20" id="0Nb-g7-HUf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xpp-xL-vEn" secondAttribute="bottom" id="BCj-aj-CRr"/>
+                            <constraint firstItem="spY-Jn-ZmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="COz-Ci-UYb"/>
+                            <constraint firstItem="xpp-xL-vEn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JDG-aa-J3k"/>
+                            <constraint firstItem="spY-Jn-ZmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VY5-ze-J7c"/>
+                            <constraint firstItem="PJa-TE-foH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aTG-Cu-XDA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="spY-Jn-ZmK" secondAttribute="trailing" constant="-20" id="baO-7R-MF9"/>
+                            <constraint firstItem="PJa-TE-foH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hyR-fC-tRw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabelOut" destination="PJa-TE-foH" id="MF3-xG-F2Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertMayhem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm5-lh-AoS">
+                                <rect key="frame" x="870" y="139" width="180" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="One"/>
+                                <connections>
+                                    <action selector="alertOne:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vcn-4I-Bez"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h3-E9-FWN">
+                                <rect key="frame" x="870" y="286" width="180" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Two"/>
+                                <connections>
+                                    <action selector="alertTwo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="WXZ-Zm-ejK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se3-Ku-3bk">
+                                <rect key="frame" x="870" y="433" width="180" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Three"/>
+                                <connections>
+                                    <action selector="alertThree:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="kxr-HH-X8q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="se3-Ku-3bk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3sA-si-dUb"/>
+                            <constraint firstItem="8h3-E9-FWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aj5-S8-Rpn"/>
+                            <constraint firstItem="8h3-E9-FWN" firstAttribute="top" secondItem="Xm5-lh-AoS" secondAttribute="bottom" constant="61" id="Y4C-4l-pCY"/>
+                            <constraint firstItem="Xm5-lh-AoS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="bPb-no-4Dv"/>
+                            <constraint firstItem="Xm5-lh-AoS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4O-O5-HIh"/>
+                            <constraint firstItem="se3-Ku-3bk" firstAttribute="top" secondItem="8h3-E9-FWN" secondAttribute="bottom" constant="61" id="rjp-8j-dfl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="339"/>
+        </scene>
+    </scenes>
+</document>

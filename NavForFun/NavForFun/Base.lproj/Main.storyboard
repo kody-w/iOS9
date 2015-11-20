@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavForFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5B-US-GKr">
+                                <rect key="frame" x="355" y="239" width="291" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Load RedVC"/>
+                                <connections>
+                                    <segue destination="ui0-O2-bce" kind="show" id="Z9e-d6-juH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q5B-US-GKr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0m7-4p-0gc"/>
+                            <constraint firstItem="Q5B-US-GKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8wh-6Q-LHN"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7pi-Sh-p8g">
+            <objects>
+                <viewController id="Spb-Tn-uQf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2vC-S1-UuA"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSH-s0-PLg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dwX-Nj-LHC">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.75686274509803919" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSw-2E-vaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536.5" y="578.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q2f-6Z-j2L">
+            <objects>
+                <viewController id="ht7-hU-MZg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NNP-mN-50j"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ckx-7D-ol5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oJr-XB-gXq">
+                        <rect key="frame" x="0.0" y="0.0" width="1001" height="563"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="you-LJ-ut2">
+                                <rect key="frame" x="376" y="145" width="249" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Load Blue"/>
+                                <connections>
+                                    <segue destination="Spb-Tn-uQf" kind="show" id="MKI-9G-cB6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.31764705882352939" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="you-LJ-ut2" firstAttribute="centerY" secondItem="oJr-XB-gXq" secondAttribute="centerY" id="CzO-X2-Zk6"/>
+                            <constraint firstItem="you-LJ-ut2" firstAttribute="centerX" secondItem="oJr-XB-gXq" secondAttribute="centerX" id="waK-aj-RgU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b8T-hX-g7S"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNA-6C-aob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.5" y="2557.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hbc-0C-MGP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ui0-O2-bce" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1001" height="563"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8yi-NZ-YF0">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ht7-hU-MZg" kind="relationship" relationship="rootViewController" id="AaR-nU-tJE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2H-zK-cmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="1349"/>
+        </scene>
+    </scenes>
+</document>
