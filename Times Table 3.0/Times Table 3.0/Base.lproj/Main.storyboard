@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Times_Table_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.050000000000000003" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="udn-eC-GoI">
+                                <rect key="frame" x="18" y="57" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="pVW-fa-wYu"/>
+                                </connections>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-eR-07N">
+                                <rect key="frame" x="0.0" y="115" width="600" height="485"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Rhm-wt-b7N">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rhm-wt-b7N" id="B6k-85-bBe">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Nbz-eX-jhc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bV1-UX-Lg8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="udn-eC-GoI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="G4k-6i-sB1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MZw-eR-07N" secondAttribute="bottom" id="UQW-W4-h4Q"/>
+                            <constraint firstItem="udn-eC-GoI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZN1-zu-1a4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MZw-eR-07N" secondAttribute="trailing" constant="-20" id="fTW-h7-Wtf"/>
+                            <constraint firstItem="udn-eC-GoI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fVG-g7-r4A"/>
+                            <constraint firstItem="MZw-eR-07N" firstAttribute="top" secondItem="udn-eC-GoI" secondAttribute="bottom" constant="28" id="lkI-h7-QXZ"/>
+                            <constraint firstItem="MZw-eR-07N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zWl-zK-z20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderValue" destination="udn-eC-GoI" id="EZF-ub-tUZ"/>
+                        <outlet property="table" destination="MZw-eR-07N" id="ujJ-px-FkB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="539"/>
+        </scene>
+    </scenes>
+</document>

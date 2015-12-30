@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segues_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-Ut-esu">
+                                <rect key="frame" x="268" y="146" width="65" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Go Here.."/>
+                                <connections>
+                                    <segue destination="lkI-FR-Rpo" kind="show" id="n9U-xg-pld"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KdB-Ut-esu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="0H8-xP-wiG"/>
+                            <constraint firstItem="KdB-Ut-esu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMQ-CO-VUv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="789"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4hE-w9-zKt">
+            <objects>
+                <viewController id="lkI-FR-Rpo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wjt-dc-hWa"/>
+                        <viewControllerLayoutGuide type="bottom" id="3xU-Y9-TZ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lfy-LC-N3W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwi-ki-e7f">
+                                <rect key="frame" x="227" y="403" width="147" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Go There..."/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="L8q-tZ-jZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wwi-ki-e7f" firstAttribute="centerX" secondItem="Lfy-LC-N3W" secondAttribute="centerX" id="9bN-tT-2JK"/>
+                            <constraint firstItem="3xU-Y9-TZ4" firstAttribute="top" secondItem="Wwi-ki-e7f" secondAttribute="bottom" constant="137" id="ae6-hf-BTM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkN-b5-C6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="783"/>
+        </scene>
+    </scenes>
+</document>
